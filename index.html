@@ -13,6 +13,7 @@
         
         body {
             background: #f8f9fa;
+            box-sizing: border-box;
         }
         
         .premium-card {
@@ -82,7 +83,7 @@
 
         // Load guest data from your Google Sheets (auto-converted to CSV)
         let guestList = {};
-        const guestListUrl = 'https://docs.google.com/spreadsheets/d/1CYpWbHt7idz8Qmh4Hdq3r13S-jWN0zkqqonLJJrnfFs/export?format=csv';
+        const guestListUrl = 'https://docs.google.com/spreadsheets/d/1elmE5zuGTclpTP2dfaziAzqWqjGEFhuL8F7lu0-mCrY/export?format=csv';
         
         function loadGuestData() {
             // Always load from your Google Drive link
@@ -219,7 +220,7 @@
         }
 
         // Pre-load and cache seating plan image for instant display
-        let seatingPlanImageUrl = 'https://docs.google.com/presentation/d/1BeUDq0_KI-RCQTqsuZkrdXHYPfQ3FmEuJYxrQszIHN0/export/png?id=1BeUDq0_KI-RCQTqsuZkrdXHYPfQ3FmEuJYxrQszIHN0&pageid=p&format=png&size=1920x1080';
+        let seatingPlanImageUrl = 'https://docs.google.com/presentation/d/1UCSRNB2815MdYQE_vdd5IeH-ysfXLGdluDzXnnPuIZ8/export/png?id=1UCSRNB2815MdYQE_vdd5IeH-ysfXLGdluDzXnnPuIZ8&pageid=p&format=png&size=1920x1080';
         let cachedImageData = null;
         
         function loadAndCacheSeatingPlan() {
@@ -284,7 +285,7 @@
             
             document.body.innerHTML += `
                 <div id="seatingPlanModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4" onclick="closeSeatingPlan()">
-                    <div class="bg-white rounded-lg p-4 max-w-sm w-full max-h-[90vh] overflow-auto shadow-2xl flex flex-col items-center justify-center" onclick="event.stopPropagation()">
+                    <div class="bg-white rounded-lg p-4 max-w-sm w-full max-h-[90vh] overflow-auto shadow-2xl" onclick="event.stopPropagation()">
                         <div class="text-center mt-8 mb-4">
                             <h3 class="font-serif text-2xl text-gray-800 font-bold">Your Seat Awaits</h3>
                         </div>
@@ -295,7 +296,7 @@
                             <img 
                                 src="${imageSource}" 
                                 alt="Wedding Seating Plan" 
-                                class="w-full aspect-square object-cover rounded-lg shadow-sm"
+                                class="w-full aspect-square object-cover rounded-lg shadow-sm border border-gray-200"
                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
                             />
                             <div class="bg-gray-100 rounded-lg p-4 text-center hidden">
@@ -522,7 +523,7 @@
                 
                 document.body.innerHTML += `
                     <div id="resultModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4" onclick="closeResultModal()">
-                        <div class="bg-white rounded-lg p-4 max-w-sm w-full max-h-[90vh] overflow-auto shadow-2xl flex flex-col items-center justify-center" onclick="event.stopPropagation()">
+                        <div class="bg-white rounded-lg p-4 max-w-sm w-full max-h-[90vh] overflow-auto shadow-2xl" onclick="event.stopPropagation()">
                             <div class="text-center mt-8 mb-4">
                                 <h3 class="font-serif text-2xl text-gray-800 font-bold">Your Seat Awaits</h3>
                             </div>
@@ -540,7 +541,7 @@
                                 <img 
                                     src="${imageSource}" 
                                     alt="Wedding Seating Plan" 
-                                    class="w-full aspect-square object-cover rounded-lg shadow-sm"
+                                    class="w-full aspect-square object-cover rounded-lg shadow-sm border border-gray-200"
                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
                                 />
                                 <div class="bg-gray-100 rounded-lg p-4 text-center hidden">
@@ -599,5 +600,5 @@
             }
         });
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b98d0a7a770dc87',t:'MTc2NzY3NzMzOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b9949bf10f8643b',t:'MTc2NzY4MjI5OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
